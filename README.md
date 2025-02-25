@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+# MasterTask - Sistema de Gerenciamento de Tarefas da Werek
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Sistema desenvolvido para controle, organização e monitoramento de tarefas dentro de uma empresa, otimizando a eficiência operacional e promovendo colaboração entre os usuários.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Informações Gerais
+- **Instituição**: Ministério da Educação - Instituto Federal da Paraíba (IFPB), Campus Campina Grande  
+- **Curso**: Engenharia de Computação - CTIC  
+- **Turma**: Padrões e Projetos 2024.2  
+- **Local**: Campina Grande, PB  
+- **Ano**: 2025  
 
-### `npm start`
+### Integrantes do Grupo
+- Felipe Luiz ([felipe.lima@academico.ifpb.edu.br](mailto:felipe.lima@academico.ifpb.edu.br))  
+- Pedro Sávio ([pedro.sarmento@academico.ifpb.edu.br](mailto:pedro.sarmento@academico.ifpb.edu.br))  
+- Geraldo Silveira ([silveira.geraldo@academico.ifpb.edu.br](mailto:silveira.geraldo@academico.ifpb.edu.br))  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Escopo
+O **MasterTask** é um sistema de gerenciamento de tarefas que visa melhorar a distribuição, transparência e controle de atividades em uma empresa. Ele abrange:  
+- Controle de acesso com permissões para Gerentes Gerais (GMs), Administradores (Admins) e Técnicos.  
+- Gerenciamento de usuários, tarefas e relatórios por GMs.  
+- Atribuição e monitoramento de tarefas por Admins.  
+- Execução e acompanhamento de tarefas por Técnicos.  
 
-### `npm test`
+### Fora do Escopo
+- Integração com ferramentas externas de análise.  
+- Gerenciamento de permissões além dos níveis GM, Admin e Técnico.  
+- Personalização avançada de relatórios.  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Público-Alvo
+- **Gerentes Gerais (GMs)**: Controle do sistema e monitoramento de atividades.  
+- **Administradores (Admins)**: Distribuição e gestão de tarefas.  
+- **Técnicos**: Execução das tarefas atribuídas.  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Requisitos Funcionais
+| ID   | Descrição                                                                 |
+|------|---------------------------------------------------------------------------|
+| RF1  | GMs podem excluir usuários Admin e Técnico.                               |
+| RF2  | GMs podem alterar papéis entre Admin e Técnico.                           |
+| RF3  | GMs podem limpar o banco de dados, removendo dados obsoletos.             |
+| RF4  | GMs podem baixar relatórios detalhados das atividades.                    |
+| RF5  | Admins podem atribuir tarefas (Individual, Em grupo, Generalista).        |
+| RF6  | Admins podem visualizar tarefas designadas e em progresso.                |
+| RF7  | Técnicos podem visualizar tarefas atribuídas e generalistas disponíveis.  |
+| RF8  | Técnicos podem iniciar, pausar e retomar tarefas.                         |
+| RF9  | Técnicos podem finalizar tarefas iniciadas.                               |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Requisitos Não Funcionais
+| ID    | Descrição                                                                 |
+|-------|---------------------------------------------------------------------------|
+| RNF1  | Acessível via navegador, otimizado para desktop e mobile.                 |
+| RNF2  | Interface intuitiva e de fácil navegação para todos os perfis.            |
+| RNF3  | Segurança de dados com autenticação por nível de usuário.                 |
+| RNF4  | Relatórios exportáveis em formato planilha.                              |
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Funcionamento Geral
+O sistema organiza o fluxo de trabalho por níveis de permissão:  
+- **GMs**: Gerenciam usuários, dados e relatórios.  
+- **Admins**: Distribuem tarefas aos Técnicos.  
+- **Técnicos**: Executam e acompanham tarefas.  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+O MasterTask promove eficiência e transparência na gestão de tarefas.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## Versões do Documento
+| Versão | Data       | Descrição                        | Responsáveis                     |
+|--------|------------|----------------------------------|----------------------------------|
+| 0.1    | 21/10/2024 | Elaboração inicial              | Felipe, Pedro, Geraldo           |
+| 0.2    | 07/12/2024 | Atualização de requisitos       | Felipe, Pedro, Geraldo           |
+| 0.3    | 18/01/2025 | Atualização de requisitos       | Felipe, Pedro, Geraldo           |
+| 0.4    | 15/02/2025 | Atualização de requisitos e casos de uso | Felipe, Pedro, Geraldo |
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Padrões Aplicados
+| Padrão            | Aplicação no MasterTask                | Justificativa                                      |
+|-------------------|----------------------------------------|---------------------------------------------------|
+| Singleton         | Conexão com o banco de dados          | Evita múltiplas conexões e melhora desempenho.    |
+| Factory Method    | Criação de tarefas                    | Facilita a criação de tipos de tarefas.           |
+| Observer          | Notificações de status de tarefas     | Atualiza GMs e Admins sobre mudanças.             |
+| Strategy          | Geração de relatórios                 | Flexibilidade nos formatos de relatório.          |
+| Decorator         | Funcionalidades extras em tarefas     | Adiciona opções sem alterar a base.              |
+| Chain of Responsibility | Controle de permissões          | Garante acesso conforme o nível do usuário.      |
+| Command           | Ações de tarefas (iniciar, pausar)    | Encapsula ações para fácil execução.             |
+| Template Method   | Fluxo de execução de tarefas          | Define estrutura padrão customizável.            |
+| Facade            | Simplificação de subsistemas          | Interface única para operações complexas.        |
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Diagrama de Casos de Uso
+_(A ser incluído posteriormente conforme especificação detalhada pelo grupo.)_
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Desenvolvido por: **Felipe Luiz, Pedro Sávio, Geraldo Silveira**  
+IFPB - Campus Campina Grande, 2025

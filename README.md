@@ -6,7 +6,7 @@ Sistema desenvolvido para controle, organização e monitoramento de tarefas den
 
 ## Informações Gerais
 - **Instituição**: Ministério da Educação - Instituto Federal da Paraíba (IFPB), Campus Campina Grande  
-- **Curso**: Engenharia de Computação - CTIC  
+- **Curso**: Engenharia de Computação   
 - **Turma**: Padrões e Projetos 2024.2  
 - **Local**: Campina Grande, PB  
 - **Ano**: 2025  

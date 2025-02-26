@@ -2,6 +2,23 @@
 
 Sistema desenvolvido para controle, organização e monitoramento de tarefas dentro de uma empresa, otimizando a eficiência operacional e promovendo colaboração entre os usuários.
 
+
+Confira o projeto ao vivo clicando no link abaixo:  
+[**MasterTask  IFPB 2025**](https://padroes-ifpb2025-psgn.netlify.app)  
+
+*Observação*: Como o backend está hospedado no Render, a primeira requisição pode levar até 50 segundos devido ao tempo de inicialização da máquina. Após isso, o funcionamento segue normalmente.
+
+### Guia Rápido de Acesso
+- **Técnico**:  
+  Usuário: `444444`  
+  Senha: `4444`  
+- **Administrador**:  
+  Usuário: `3333`  
+  Senha: `3333`  
+- **Gerente (GM)**:  
+  Usuário: `5555`  
+  Senha: `5555`
+
 ---
 
 ## Informações Gerais

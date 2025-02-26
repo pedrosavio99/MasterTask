@@ -1,4 +1,4 @@
-# MasterTask - Sistema de Gerenciamento de Tarefas da Werek
+# MasterTask - Sistema de Gerenciamento de Tarefas
 
 Sistema desenvolvido para controle, organização e monitoramento de tarefas dentro de uma empresa, otimizando a eficiência operacional e promovendo colaboração entre os usuários.
 

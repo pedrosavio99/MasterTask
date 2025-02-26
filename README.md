@@ -97,12 +97,6 @@ O MasterTask promove eficiência e transparência na gestão de tarefas.
 | Template Method   | Fluxo de execução de tarefas          | Define estrutura padrão customizável.            |
 | Facade            | Simplificação de subsistemas          | Interface única para operações complexas.        |
 
----
-
-## Diagrama de Casos de Uso
-_(A ser incluído posteriormente conforme especificação detalhada pelo grupo.)_
-
----
 
 Desenvolvido por: **Felipe Luiz, Pedro Sávio, Geraldo Silveira**  
 IFPB - Campus Campina Grande, 2025
